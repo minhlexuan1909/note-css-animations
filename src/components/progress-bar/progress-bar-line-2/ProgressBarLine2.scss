@@ -1,0 +1,41 @@
+.progress-bar-line-2 {
+  .progress-bar {
+    margin-top: 30px;
+    width: 300px;
+    height: 10px;
+    border-radius: 20px;
+    background: #d8d8d8;
+    .progress-bar-done {
+      position: relative;
+      height: 100%;
+      //   background: linear-gradient(to right, #7f7, #0f0);
+      background-color: #0f0;
+      border-radius: 20px;
+      opacity: 0;
+      &::before {
+        position: absolute;
+        content: "";
+        top: -10px;
+        right: 0px;
+        border: 7px solid transparent;
+        height: 0px;
+        width: 0px;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: black;
+      }
+      &::after {
+        position: absolute;
+        content: attr(data-after);
+        top: -25px;
+        right: 0px;
+        border-radius: 3px;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 1px 8px;
+      }
+    }
+  }
+}

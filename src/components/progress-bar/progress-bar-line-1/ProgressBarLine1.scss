@@ -1,0 +1,21 @@
+.progress-bar-line-1 {
+  .progress {
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    height: 20px;
+    width: 300px;
+    .progress-done {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #7f7, #0f0);
+      box-shadow: 0 3px 3px -5px #0f0, 0 2px 5px #0f0;
+      border-radius: 20px;
+      height: 100%;
+      width: 0px;
+      transition: 1.5s ease;
+      opacity: 0;
+      color: white;
+    }
+  }
+}
